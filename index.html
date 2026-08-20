@@ -89,10 +89,25 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 .pitems li::before{content:'✓';color:#6660B4;font-weight:700;flex-shrink:0}
 .ptotal{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);margin-top:14px}
 .ptotal strong{color:#FFBEF5}
-.guarantee-box{max-width:480px;margin:24px auto 0;background:rgba(102,96,180,0.12);border:1px solid rgba(102,96,180,0.4);border-radius:16px;padding:24px 28px}
-.guarantee-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#FFBEF5;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
-.guarantee-text{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.65}
 .validity-note{max-width:480px;margin:16px auto 0;text-align:center;font-size:12px;color:rgba(255,255,255,0.4)}
+
+.contract-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:36px 40px}
+.contract-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.contract-icon{width:44px;height:44px;border-radius:12px;background:rgba(102,96,180,0.28);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.contract-title{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:800;color:#FFBEF5}
+.contract-desc{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.75}
+.contract-rows{border-top:1px solid rgba(255,255,255,0.08);margin-top:24px}
+.contract-row{display:flex;gap:28px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.contract-row:last-child{border-bottom:none}
+.contract-label{flex-shrink:0;width:150px}
+.contract-pill{display:inline-block;background:rgba(102,96,180,0.25);border:1px solid rgba(102,96,180,0.5);color:#FFBEF5;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+.contract-text{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7}
+.contract-text strong{color:#fff}
+@media(max-width:640px){
+  .contract-card{padding:26px 22px}
+  .contract-row{flex-direction:column;gap:10px}
+  .contract-label{width:auto}
+}
 
 .timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0;position:relative}
 .timeline::before{content:'';position:absolute;top:27px;left:0;right:0;height:2px;background:linear-gradient(90deg,#6660B4,#FFBEF5);z-index:0}
@@ -363,11 +378,40 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
         <div style="font-family:'Montserrat',sans-serif;font-size:26px;font-weight:800;color:#FFBEF5">R$ 9.600</div>
       </div>
     </div>
-    <div class="guarantee-box">
-      <div class="guarantee-title">Garantia de Utilização</div>
-      <div class="guarantee-text">Os primeiros <strong style="color:#fff">6 meses</strong> funcionam como o período de testes que a Autoglass pediu nas conversas com Guilherme, Reis e Jamile. Esse é o nosso compromisso de piloto: o time usa a dgenny® na prática, com governança total sobre as negociações, antes de qualquer decisão sobre expandir para o restante dos 17 compradores.</div>
-    </div>
     <p class="validity-note">Proposta válida até 04/09/2026.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GARANTIA DE RETORNO -->
+<section class="section">
+  <div class="sec-badge">Garantia de Retorno</div>
+  <h2 class="sec-title">Contrato de <em>Produtividade</em></h2>
+  <div class="contract-card">
+    <div class="contract-head">
+      <div class="contract-icon">🛡️</div>
+      <div class="contract-title">Contrato de Produtividade</div>
+    </div>
+    <p class="contract-desc">Incluímos essa cláusula porque acreditamos — de verdade — nos resultados que a dgenny® entrega. Se a ferramenta está sendo usada, ela está gerando retorno. Um cliente que cresce com a plataforma não precisa de barreiras para ficar — precisa de resultado para querer continuar. Por isso, quanto mais a Autoglass usar a dgenny®, mais flexível é o compromisso contratual.</p>
+    <div class="contract-rows">
+      <div class="contract-row">
+        <div class="contract-label"><span class="contract-pill">Compromisso</span></div>
+        <div class="contract-text">A Autoglass se compromete a utilizar no mínimo <strong>70% das conversas iniciadas</strong> do pacote contratado (1.050 conversas/mês, de um total de 1.500/mês) na dgenny®.</div>
+      </div>
+      <div class="contract-row">
+        <div class="contract-label"><span class="contract-pill">Benefício</span></div>
+        <div class="contract-text">Em contrapartida, a multa rescisória é válida <strong>apenas até o 6º mês de contrato</strong> — não durante os 12 meses. A partir do mês 7, a Autoglass pode encerrar o contrato sem penalidade, desde que o compromisso de uso tenha sido cumprido. Esse é justamente o período de testes que vocês pediram nas nossas conversas.</div>
+      </div>
+      <div class="contract-row">
+        <div class="contract-label"><span class="contract-pill">Condição</span></div>
+        <div class="contract-text">Caso o uso <strong>não atinja 70% das conversas iniciadas</strong> (1.050/mês) em qualquer dos primeiros 6 meses, a multa rescisória passa a vigorar até o 12º mês do contrato.</div>
+      </div>
+      <div class="contract-row">
+        <div class="contract-label"><span class="contract-pill">Multa</span></div>
+        <div class="contract-text"><strong>35% sobre o valor do contrato restante</strong> — calculada sobre os meses que faltam para completar os 12 meses de vigência, aplicável apenas se o compromisso de uso não for cumprido nos 6 primeiros meses.</div>
+      </div>
+    </div>
   </div>
 </section>
 
